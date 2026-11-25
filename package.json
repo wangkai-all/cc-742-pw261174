@@ -1,0 +1,12 @@
+{
+  "name": "coding-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Text-coding analysis desk: aligned human span annotations, revision-safe migration, disagreement attribution, drift detection.",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test tests/*.test.js",
+    "build:fonts": "node scripts/subset-fonts.mjs"
+  }
+}

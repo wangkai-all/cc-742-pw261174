@@ -1,0 +1,4056 @@
+{
+  "meta": {
+    "title": "虚构社区意见文本编码示例",
+    "disclaimer": "全部文本为虚构示例，用于演示编码对齐与漂移检测，不含真实投诉信息。",
+    "topics": [
+      {
+        "id": "noise",
+        "label": "噪音",
+        "color": 0,
+        "note": "早市喇叭、卸货、夜间施工等声响干扰"
+      },
+      {
+        "id": "parking",
+        "label": "停车",
+        "color": 1,
+        "note": "机动车与非机动车停放、车位分配"
+      },
+      {
+        "id": "green",
+        "label": "绿化",
+        "color": 2,
+        "note": "绿地、草皮、灌木、围栏与养护"
+      },
+      {
+        "id": "fee",
+        "label": "收费",
+        "color": 3,
+        "note": "物业费、停车费、摊位费、押金及公示"
+      },
+      {
+        "id": "safety",
+        "label": "安全",
+        "color": 4,
+        "note": "消防通道、门禁、照明、充电、儿童活动区"
+      },
+      {
+        "id": "service",
+        "label": "服务",
+        "color": 5,
+        "note": "物业服务响应、清运、管理方处置与流程"
+      }
+    ],
+    "coders": [
+      {
+        "id": "A",
+        "name": "编码者甲",
+        "note": "按段落切分，跨句合并，允许一段多主题"
+      },
+      {
+        "id": "B",
+        "name": "编码者乙",
+        "note": "按单句切分，一句多主题时用重叠区间"
+      }
+    ],
+    "generatedAt": null
+  },
+  "documents": [
+    {
+      "id": "D01",
+      "window": "w1",
+      "date": "2026-09-01",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "早市占道与噪音",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "早市卸货的三轮车在楼下按喇叭催人让路。摊主的三轮车占了两个机动车位，告示被撕掉了。楼道里的电动车充电一直没解决，上周还跳过一次闸。绿化带里被倒了泔水，夏天味道很大，蚊虫也多。希望街道办牵头，把早市的范围和时间定下来。",
+          "clauseStart": [
+            0,
+            19,
+            41,
+            65,
+            87
+          ],
+          "clauseEnd": [
+            19,
+            41,
+            65,
+            87,
+            108
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D01-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 19,
+          "end": 41,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D01-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 41,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D01-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green",
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D01-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 87,
+          "end": 108,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D01-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D01-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 19,
+          "end": 41,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D01-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 41,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D01-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D01-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 87,
+          "end": 108,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D01-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "window": "w1",
+      "date": "2026-09-02",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "消防通道与照明",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "东门早市的摊位摆到九点，喇叭声从五点就没停过。单元门口经常被临时停放的货车堵住，婴儿车推不过去。地下车库的照明坏了三个月，转弯处的反光镜也碎了。绿化带的围栏倒了一段，一直没有人修。我们的诉求很简单，先把消防通道和照明修好。",
+          "clauseStart": [
+            0,
+            23,
+            48,
+            72,
+            90
+          ],
+          "clauseEnd": [
+            23,
+            48,
+            72,
+            90,
+            111
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 48,
+          "topics": [
+            "noise",
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D02-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 48,
+          "end": 72,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D02-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 72,
+          "end": 90,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D02-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 90,
+          "end": 111,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D02-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 23,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D02-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 23,
+          "end": 48,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D02-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 48,
+          "end": 72,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D02-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 72,
+          "end": 90,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D02-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 90,
+          "end": 111,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D02-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "window": "w1",
+      "date": "2026-09-03",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "门禁与消防栓",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "西门外的小吃摊每天清晨用扩音器招揽客人。地下车库的入口被两辆车并排停着，只剩一条窄缝。消防栓前面被当成了停车位，我看着很担心。绿化带靠近车道的一侧没有护栏，晚上只能贴着墙走。希望市场管理方给出明确的收摊时间和进场时间。",
+          "clauseStart": [
+            0,
+            20,
+            43,
+            63,
+            87
+          ],
+          "clauseEnd": [
+            20,
+            43,
+            63,
+            87,
+            109
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 20,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D03-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 20,
+          "end": 43,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D03-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 43,
+          "end": 63,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D03-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 63,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D03-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 87,
+          "end": 109,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D03-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 20,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D03-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 20,
+          "end": 43,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D03-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 43,
+          "end": 63,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D03-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 63,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D03-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 87,
+          "end": 109,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D03-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "window": "w1",
+      "date": "2026-09-04",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "清运与摊位管理",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "楼下的夜宵摊营业到凌晨，划拳声传得很远。非机动车棚里堆满杂物，电动车只能停在楼道口。消防通道长期堆着纸箱，物业清理过一次又恢复了。有人从六楼拉线充电，线就挂在绿化带的树枝上。保安说他们只能劝，没有执法权，问题一直拖着。",
+          "clauseStart": [
+            0,
+            20,
+            42,
+            65,
+            87
+          ],
+          "clauseEnd": [
+            20,
+            42,
+            65,
+            87,
+            109
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 42,
+          "topics": [
+            "noise",
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D04-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 42,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D04-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D04-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 87,
+          "end": 109,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D04-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 20,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D04-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 20,
+          "end": 42,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D04-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 42,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D04-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D04-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 87,
+          "end": 109,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D04-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "window": "w1",
+      "date": "2026-09-05",
+      "type": "C",
+      "typeLabel": "咨询",
+      "title": "咨询调价流程",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "咨询物业费的调价流程需要多少业主同意。物业费里绿化养护占多少比例，今年预算在哪里查。停车费的调价方案在哪里公示。如果预算减少，公共绿地的维护由谁负责。请把调价的听证记录一并公示。",
+          "clauseStart": [
+            0,
+            19,
+            42,
+            56,
+            75
+          ],
+          "clauseEnd": [
+            19,
+            42,
+            56,
+            75,
+            89
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D05-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 19,
+          "end": 42,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D05-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 42,
+          "end": 56,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D05-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 56,
+          "end": 75,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D05-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 75,
+          "end": 89,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D05-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D05-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 19,
+          "end": 42,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D05-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 42,
+          "end": 56,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D05-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 56,
+          "end": 75,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D05-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 75,
+          "end": 89,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D05-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "window": "w2",
+      "date": "2026-09-08",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "早市占道与噪音",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "楼下的夜宵摊营业到凌晨，划拳声传得很远。非机动车棚里堆满杂物，电动车只能停在楼道口。消防通道长期堆着纸箱，物业清理过一次又恢复了。有人从六楼拉线充电，线就挂在绿化带的树枝上。保安说他们只能劝，没有执法权，问题一直拖着。",
+          "clauseStart": [
+            0,
+            20,
+            42,
+            65,
+            87
+          ],
+          "clauseEnd": [
+            20,
+            42,
+            65,
+            87,
+            109
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 42,
+          "topics": [
+            "noise",
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D06-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 42,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D06-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green",
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D06-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 87,
+          "end": 109,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D06-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 20,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D06-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 20,
+          "end": 42,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D06-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 42,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D06-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D06-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 87,
+          "end": 109,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D06-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "window": "w2",
+      "date": "2026-09-09",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "消防通道与照明",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "早市卸货的三轮车在楼下按喇叭催人让路。摊主的三轮车占了两个机动车位，告示被撕掉了。楼道里的电动车充电一直没解决，上周还跳过一次闸。绿化带里被倒了泔水，夏天味道很大，蚊虫也多。希望街道办牵头，把早市的范围和时间定下来。",
+          "clauseStart": [
+            0,
+            19,
+            41,
+            65,
+            87
+          ],
+          "clauseEnd": [
+            19,
+            41,
+            65,
+            87,
+            108
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D07-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 19,
+          "end": 41,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D07-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 41,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D07-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D07-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 87,
+          "end": 108,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D07-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D07-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 19,
+          "end": 41,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D07-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 41,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D07-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D07-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 87,
+          "end": 108,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D07-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "window": "w2",
+      "date": "2026-09-10",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "门禁与消防栓",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "东门早市的摊位摆到九点，喇叭声从五点就没停过。单元门口经常被临时停放的货车堵住，婴儿车推不过去。地下车库的照明坏了三个月，转弯处的反光镜也碎了。绿化带的围栏倒了一段，一直没有人修。我们的诉求很简单，先把消防通道和照明修好。",
+          "clauseStart": [
+            0,
+            23,
+            48,
+            72,
+            90
+          ],
+          "clauseEnd": [
+            23,
+            48,
+            72,
+            90,
+            111
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 48,
+          "topics": [
+            "noise",
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D08-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 48,
+          "end": 72,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D08-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 72,
+          "end": 90,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D08-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 90,
+          "end": 111,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D08-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 23,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D08-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 23,
+          "end": 48,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D08-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 48,
+          "end": 72,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D08-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 72,
+          "end": 90,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D08-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 90,
+          "end": 111,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D08-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "window": "w2",
+      "date": "2026-09-11",
+      "type": "S",
+      "typeLabel": "建议",
+      "title": "建议错峰临停",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "建议晚高峰开放地下车库的临时车位。临时停车的收费标准应该和月租分开公示。建议把枯死的灌木换掉，补种耐阴的品种。如果能加装两个监控，快递丢失的情况会少一些。这些调整成本不高，物业可以先试一个月。",
+          "clauseStart": [
+            0,
+            17,
+            36,
+            55,
+            77
+          ],
+          "clauseEnd": [
+            17,
+            36,
+            55,
+            77,
+            96
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 17,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D09-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 17,
+          "end": 36,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D09-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 36,
+          "end": 55,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D09-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 55,
+          "end": 77,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D09-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 77,
+          "end": 96,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D09-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 17,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D09-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 17,
+          "end": 36,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D09-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 36,
+          "end": 55,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D09-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 55,
+          "end": 77,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D09-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 77,
+          "end": 96,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D09-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "window": "w2",
+      "date": "2026-09-12",
+      "type": "C",
+      "typeLabel": "咨询",
+      "title": "咨询调价流程",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "请问小区门禁卡押金的收费依据是什么。绿化养护外包公司的收费标准能否公开。如果摊主中途退出，已经交的摊位费能不能退。绿化带围栏的维修是否也在这次的维修计划里。希望物业公布维修进度和收费依据。",
+          "clauseStart": [
+            0,
+            18,
+            36,
+            57,
+            78
+          ],
+          "clauseEnd": [
+            18,
+            36,
+            57,
+            78,
+            94
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 36,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D10-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 36,
+          "end": 57,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D10-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 57,
+          "end": 78,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D10-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 78,
+          "end": 94,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D10-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 18,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D10-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 18,
+          "end": 36,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D10-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 36,
+          "end": 57,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D10-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 57,
+          "end": 78,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D10-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 78,
+          "end": 94,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D10-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D11",
+      "window": "w3",
+      "date": "2026-09-15",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "早市占道与噪音",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "西门外的小吃摊每天清晨用扩音器招揽客人。地下车库的入口被两辆车并排停着，只剩一条窄缝。消防栓前面被当成了停车位，我看着很担心。绿化带靠近车道的一侧没有护栏，晚上只能贴着墙走。希望市场管理方给出明确的收摊时间和进场时间。",
+          "clauseStart": [
+            0,
+            20,
+            43,
+            63,
+            87
+          ],
+          "clauseEnd": [
+            20,
+            43,
+            63,
+            87,
+            109
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 20,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D11-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 20,
+          "end": 43,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D11-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 43,
+          "end": 63,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D11-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 63,
+          "end": 87,
+          "topics": [
+            "green",
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D11-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 87,
+          "end": 109,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D11-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 20,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D11-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 20,
+          "end": 43,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D11-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 43,
+          "end": 63,
+          "topics": [
+            "safety",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D11-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 63,
+          "end": 87,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D11-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 87,
+          "end": 109,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D11-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D12",
+      "window": "w3",
+      "date": "2026-09-16",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "消防通道与照明",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "门禁坏了以后，快递都堆在一楼大厅，谁都能拿走。门禁坏了以后，外卖员进出反而方便，但安全问题没有人负责。有人把消防栓前面当成了停车位，我看着很担心。绿化带的围栏倒了一段，一直没有人修。物业说门禁的配件要等厂家发货，可是消防通道不能等。希望物业把维修进度贴到公告栏，我们愿意配合登记。",
+          "clauseStart": [
+            0,
+            23,
+            51,
+            73,
+            91,
+            116
+          ],
+          "clauseEnd": [
+            23,
+            51,
+            73,
+            91,
+            116,
+            140
+          ],
+          "note": "原始意见"
+        },
+        {
+          "version": "D12-v2",
+          "text": "门禁坏了以后，快递都堆在一楼大厅，谁都能拿走。有业主提议先装一个临时的刷卡门，费用从公共收益里出。有人把消防栓前面当成了停车位，我在群里问过物业，我看着很担心。绿化带的围栏倒了一段，一直没有人修。同样的问题在三号楼也出现过。绿化带的围栏倒了一段，一直没有人修。物业说门禁的配件要等厂家发货，具体时间他们也不清楚。希望物业把维修进度贴到公告栏，我们愿意配合登记。",
+          "note": "示例修订：插入一句、删除一句、重复一句、改写一句。",
+          "operations": [
+            {
+              "kind": "keep",
+              "text": "门禁坏了以后，快递都堆在一楼大厅，谁都能拿走。",
+              "clause": 0
+            },
+            {
+              "kind": "insert",
+              "text": "有业主提议先装一个临时的刷卡门，费用从公共收益里出。"
+            },
+            {
+              "kind": "delete",
+              "text": "门禁坏了以后，外卖员进出反而方便，但安全问题没有人负责。",
+              "clause": 1
+            },
+            {
+              "kind": "replace",
+              "text": "有人把消防栓前面当成了停车位，我在群里问过物业，我看着很担心。",
+              "replaced": "有人把消防栓前面当成了停车位，我看着很担心。",
+              "clause": 2
+            },
+            {
+              "kind": "keep",
+              "text": "绿化带的围栏倒了一段，一直没有人修。",
+              "clause": 3
+            },
+            {
+              "kind": "insert",
+              "text": "同样的问题在三号楼也出现过。"
+            },
+            {
+              "kind": "duplicate",
+              "text": "绿化带的围栏倒了一段，一直没有人修。",
+              "clause": 3
+            },
+            {
+              "kind": "replace",
+              "text": "物业说门禁的配件要等厂家发货，具体时间他们也不清楚。",
+              "replaced": "物业说门禁的配件要等厂家发货，可是消防通道不能等。",
+              "clause": 4
+            },
+            {
+              "kind": "keep",
+              "text": "希望物业把维修进度贴到公告栏，我们愿意配合登记。",
+              "clause": 5
+            }
+          ],
+          "basedOn": "v1"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 51,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D12-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 51,
+          "end": 73,
+          "topics": [
+            "parking",
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D12-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 73,
+          "end": 91,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D12-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 91,
+          "end": 116,
+          "topics": [
+            "safety",
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D12-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 116,
+          "end": 140,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            5,
+            5
+          ],
+          "id": "D12-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 23,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D12-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 23,
+          "end": 51,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D12-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 51,
+          "end": 73,
+          "topics": [
+            "parking",
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D12-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 73,
+          "end": 91,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D12-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 91,
+          "end": 116,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D12-B-05"
+        },
+        {
+          "coder": "B",
+          "start": 116,
+          "end": 140,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            5,
+            5
+          ],
+          "id": "D12-B-06"
+        }
+      ]
+    },
+    {
+      "id": "D13",
+      "window": "w3",
+      "date": "2026-09-17",
+      "type": "S",
+      "typeLabel": "建议",
+      "title": "建议翻新活动区",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "建议给每个单元划出两米宽的临时卸货位。摊位费可以按天收取，并公示收费标准。绿化带的自动喷灌经常在中午开启，水都蒸发了。活动区的照明可以在傍晚延长半小时。建议公示整改进度，每月更新一次。",
+          "clauseStart": [
+            0,
+            19,
+            37,
+            59,
+            76
+          ],
+          "clauseEnd": [
+            19,
+            37,
+            59,
+            76,
+            92
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D13-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 19,
+          "end": 37,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D13-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 37,
+          "end": 59,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D13-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 59,
+          "end": 76,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D13-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 76,
+          "end": 92,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D13-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D13-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 19,
+          "end": 37,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D13-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 37,
+          "end": 59,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D13-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 59,
+          "end": 76,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D13-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 76,
+          "end": 92,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D13-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D14",
+      "window": "w3",
+      "date": "2026-09-18",
+      "type": "S",
+      "typeLabel": "建议",
+      "title": "建议错峰临停",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "建议在东门内侧划出固定的非机动车位。电梯广告的收入去向不明，建议单独列一项。建议在绿化带边缘加一排矮栏杆。建议在消防通道口加装一处反光标识。这些改动不需要大工程，先在一个门试运行。",
+          "clauseStart": [
+            0,
+            18,
+            38,
+            53,
+            70
+          ],
+          "clauseEnd": [
+            18,
+            38,
+            53,
+            70,
+            90
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 38,
+          "topics": [
+            "fee",
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D14-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 38,
+          "end": 53,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D14-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 53,
+          "end": 70,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D14-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 70,
+          "end": 90,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D14-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 18,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D14-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 18,
+          "end": 38,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D14-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 38,
+          "end": 53,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D14-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 53,
+          "end": 70,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D14-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 70,
+          "end": 90,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D14-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D15",
+      "window": "w3",
+      "date": "2026-09-19",
+      "type": "C",
+      "typeLabel": "咨询",
+      "title": "咨询调价流程",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "想了解早市摊位费的收取方式。听说明年绿化养护的预算要减少，减少多少。这部分收入的明细会不会在公告栏公示。如果绿化养护没有完成，这部分费用会退还吗。请告知负责收费的具体部门和联系电话。",
+          "clauseStart": [
+            0,
+            14,
+            34,
+            52,
+            73
+          ],
+          "clauseEnd": [
+            14,
+            34,
+            52,
+            73,
+            91
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 14,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D15-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 14,
+          "end": 34,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D15-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 34,
+          "end": 52,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D15-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 52,
+          "end": 73,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D15-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 73,
+          "end": 91,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D15-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 14,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D15-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 14,
+          "end": 34,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D15-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 34,
+          "end": 52,
+          "topics": [
+            "fee",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D15-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 52,
+          "end": 73,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D15-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 73,
+          "end": 91,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D15-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D16",
+      "window": "w4",
+      "date": "2026-09-22",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "早市占道与噪音",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "东门早市的摊位摆到九点，喇叭声从五点就没停过。单元门口经常被临时停放的货车堵住，婴儿车推不过去。地下车库的照明坏了三个月，转弯处的反光镜也碎了。绿化带的围栏倒了一段，一直没有人修。我们的诉求很简单，先把消防通道和照明修好。",
+          "clauseStart": [
+            0,
+            23,
+            48,
+            72,
+            90
+          ],
+          "clauseEnd": [
+            23,
+            48,
+            72,
+            90,
+            111
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 48,
+          "topics": [
+            "noise",
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D16-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 48,
+          "end": 72,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D16-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 72,
+          "end": 90,
+          "topics": [
+            "green",
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D16-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 90,
+          "end": 111,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D16-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 23,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D16-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 23,
+          "end": 48,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D16-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 48,
+          "end": 72,
+          "topics": [
+            "safety",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D16-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 72,
+          "end": 90,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D16-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 90,
+          "end": 111,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D16-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D17",
+      "window": "w4",
+      "date": "2026-09-23",
+      "type": "S",
+      "typeLabel": "建议",
+      "title": "建议公开费用明细",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "建议晚高峰开放地下车库的临时车位。临时停车的收费标准应该和月租分开公示。建议把枯死的灌木换掉，补种耐阴的品种。如果能加装两个监控，快递丢失的情况会少一些。这些调整成本不高，物业可以先试一个月。",
+          "clauseStart": [
+            0,
+            17,
+            36,
+            55,
+            77
+          ],
+          "clauseEnd": [
+            17,
+            36,
+            55,
+            77,
+            96
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 17,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D17-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 17,
+          "end": 36,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D17-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 36,
+          "end": 55,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D17-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 55,
+          "end": 77,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D17-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 77,
+          "end": 96,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D17-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 17,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D17-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 17,
+          "end": 36,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D17-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 36,
+          "end": 55,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D17-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 55,
+          "end": 77,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D17-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 77,
+          "end": 96,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D17-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D18",
+      "window": "w4",
+      "date": "2026-09-24",
+      "type": "S",
+      "typeLabel": "建议",
+      "title": "建议翻新活动区",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "建议把楼前的空地改成非机动车停放区。建议把物业费的明细每季度公开一次。绿化带被踩出了一条土路，建议补种草皮。建议在儿童活动区加装遮阳棚。如果预算不够，先修最危险的两处也行。",
+          "clauseStart": [
+            0,
+            18,
+            35,
+            54,
+            68
+          ],
+          "clauseEnd": [
+            18,
+            35,
+            54,
+            68,
+            86
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 35,
+          "topics": [
+            "fee",
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D18-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 35,
+          "end": 54,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D18-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 54,
+          "end": 68,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D18-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 68,
+          "end": 86,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D18-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 18,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D18-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 18,
+          "end": 35,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D18-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 35,
+          "end": 54,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D18-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 54,
+          "end": 68,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D18-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 68,
+          "end": 86,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D18-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D19",
+      "window": "w4",
+      "date": "2026-09-25",
+      "type": "S",
+      "typeLabel": "建议",
+      "title": "建议错峰临停",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "建议给每个单元划出两米宽的临时卸货位。摊位费可以按天收取，并公示收费标准。绿化带的自动喷灌经常在中午开启，水都蒸发了。活动区的照明可以在傍晚延长半小时。建议公示整改进度，每月更新一次。",
+          "clauseStart": [
+            0,
+            19,
+            37,
+            59,
+            76
+          ],
+          "clauseEnd": [
+            19,
+            37,
+            59,
+            76,
+            92
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D19-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 19,
+          "end": 37,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D19-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 37,
+          "end": 59,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D19-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 59,
+          "end": 76,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D19-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 76,
+          "end": 92,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D19-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D19-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 19,
+          "end": 37,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D19-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 37,
+          "end": 59,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D19-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 59,
+          "end": 76,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D19-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 76,
+          "end": 92,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D19-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D20",
+      "window": "w4",
+      "date": "2026-09-26",
+      "type": "C",
+      "typeLabel": "咨询",
+      "title": "咨询调价流程",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "想咨询小区停车费的收费标准是怎么定的。摊位费的收入是否用于绿化带的日常维护。押金退还是否需要收据，收据丢了还能退吗。补种草皮的养护周期一般是多久。希望回复时能附上收费依据的文件编号。",
+          "clauseStart": [
+            0,
+            19,
+            38,
+            58,
+            73
+          ],
+          "clauseEnd": [
+            19,
+            38,
+            58,
+            73,
+            91
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 38,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D20-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 38,
+          "end": 58,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D20-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 58,
+          "end": 73,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D20-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 73,
+          "end": 91,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D20-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D20-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 19,
+          "end": 38,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D20-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 38,
+          "end": 58,
+          "topics": [
+            "fee",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D20-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 58,
+          "end": 73,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D20-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 73,
+          "end": 91,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D20-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D21",
+      "window": "w5",
+      "date": "2026-09-29",
+      "type": "T",
+      "typeLabel": "投诉",
+      "title": "早市占道与噪音",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "早市卸货的三轮车在楼下按喇叭催人让路。摊主的三轮车占了两个机动车位，告示被撕掉了。楼道里的电动车充电一直没解决，上周还跳过一次闸。绿化带里被倒了泔水，夏天味道很大，蚊虫也多。希望街道办牵头，把早市的范围和时间定下来。",
+          "clauseStart": [
+            0,
+            19,
+            41,
+            65,
+            87
+          ],
+          "clauseEnd": [
+            19,
+            41,
+            65,
+            87,
+            108
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D21-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 19,
+          "end": 41,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D21-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 41,
+          "end": 65,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D21-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green",
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D21-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 87,
+          "end": 108,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D21-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "noise"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D21-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 19,
+          "end": 41,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D21-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 41,
+          "end": 65,
+          "topics": [
+            "safety",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D21-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 65,
+          "end": 87,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D21-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 87,
+          "end": 108,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D21-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D22",
+      "window": "w5",
+      "date": "2026-09-30",
+      "type": "S",
+      "typeLabel": "建议",
+      "title": "建议公开费用明细",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "建议在东门内侧划出固定的非机动车位。电梯广告的收入去向不明，建议单独列一项。建议在绿化带边缘加一排矮栏杆。建议在消防通道口加装一处反光标识。这些改动不需要大工程，先在一个门试运行。",
+          "clauseStart": [
+            0,
+            18,
+            38,
+            53,
+            70
+          ],
+          "clauseEnd": [
+            18,
+            38,
+            53,
+            70,
+            90
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 38,
+          "topics": [
+            "fee",
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D22-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 38,
+          "end": 53,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D22-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 53,
+          "end": 70,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D22-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 70,
+          "end": 90,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D22-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 18,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D22-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 18,
+          "end": 38,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D22-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 38,
+          "end": 53,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D22-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 53,
+          "end": 70,
+          "topics": [
+            "safety",
+            "service"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D22-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 70,
+          "end": 90,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D22-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D23",
+      "window": "w5",
+      "date": "2026-10-01",
+      "type": "S",
+      "typeLabel": "建议",
+      "title": "建议翻新活动区",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "建议晚高峰开放地下车库的临时车位。临时停车的收费标准应该和月租分开公示。建议把枯死的灌木换掉，补种耐阴的品种。如果能加装两个监控，快递丢失的情况会少一些。这些调整成本不高，物业可以先试一个月。",
+          "clauseStart": [
+            0,
+            17,
+            36,
+            55,
+            77
+          ],
+          "clauseEnd": [
+            17,
+            36,
+            55,
+            77,
+            96
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 17,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D23-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 17,
+          "end": 36,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D23-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 36,
+          "end": 55,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D23-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 55,
+          "end": 77,
+          "topics": [
+            "safety"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D23-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 77,
+          "end": 96,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D23-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 17,
+          "topics": [
+            "parking"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D23-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 17,
+          "end": 36,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D23-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 36,
+          "end": 55,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D23-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 55,
+          "end": 77,
+          "topics": [
+            "safety",
+            "service"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D23-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 77,
+          "end": 96,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D23-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D24",
+      "window": "w5",
+      "date": "2026-10-02",
+      "type": "C",
+      "typeLabel": "咨询",
+      "title": "咨询门禁维修",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "请问小区门禁卡押金的收费依据是什么。绿化养护外包公司的收费标准能否公开。如果摊主中途退出，已经交的摊位费能不能退。绿化带围栏的维修是否也在这次的维修计划里。希望物业公布维修进度和收费依据。",
+          "clauseStart": [
+            0,
+            18,
+            36,
+            57,
+            78
+          ],
+          "clauseEnd": [
+            18,
+            36,
+            57,
+            78,
+            94
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 36,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            0,
+            1
+          ],
+          "id": "D24-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 36,
+          "end": 57,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D24-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 57,
+          "end": 78,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D24-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 78,
+          "end": 94,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D24-A-04"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 18,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D24-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 18,
+          "end": 36,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D24-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 36,
+          "end": 57,
+          "topics": [
+            "fee",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D24-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 57,
+          "end": 78,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D24-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 78,
+          "end": 94,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D24-B-05"
+        }
+      ]
+    },
+    {
+      "id": "D25",
+      "window": "w5",
+      "date": "2026-10-03",
+      "type": "C",
+      "typeLabel": "咨询",
+      "title": "咨询调价流程",
+      "versions": [
+        {
+          "version": "v1",
+          "text": "咨询物业费的调价流程需要多少业主同意。物业费里绿化养护占多少比例，今年预算在哪里查。停车费的调价方案在哪里公示。如果预算减少，公共绿地的维护由谁负责。请把调价的听证记录一并公示。",
+          "clauseStart": [
+            0,
+            19,
+            42,
+            56,
+            75
+          ],
+          "clauseEnd": [
+            19,
+            42,
+            56,
+            75,
+            89
+          ],
+          "note": "原始意见"
+        }
+      ],
+      "annotations": [
+        {
+          "coder": "A",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D25-A-01"
+        },
+        {
+          "coder": "A",
+          "start": 19,
+          "end": 42,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D25-A-02"
+        },
+        {
+          "coder": "A",
+          "start": 42,
+          "end": 56,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D25-A-03"
+        },
+        {
+          "coder": "A",
+          "start": 56,
+          "end": 75,
+          "topics": [
+            "green"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D25-A-04"
+        },
+        {
+          "coder": "A",
+          "start": 75,
+          "end": 89,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D25-A-05"
+        },
+        {
+          "coder": "B",
+          "start": 0,
+          "end": 19,
+          "topics": [
+            "fee"
+          ],
+          "clauseRange": [
+            0,
+            0
+          ],
+          "id": "D25-B-01"
+        },
+        {
+          "coder": "B",
+          "start": 19,
+          "end": 42,
+          "topics": [
+            "fee",
+            "green"
+          ],
+          "clauseRange": [
+            1,
+            1
+          ],
+          "id": "D25-B-02"
+        },
+        {
+          "coder": "B",
+          "start": 42,
+          "end": 56,
+          "topics": [
+            "fee",
+            "service"
+          ],
+          "clauseRange": [
+            2,
+            2
+          ],
+          "id": "D25-B-03"
+        },
+        {
+          "coder": "B",
+          "start": 56,
+          "end": 75,
+          "topics": [
+            "green",
+            "service"
+          ],
+          "clauseRange": [
+            3,
+            3
+          ],
+          "id": "D25-B-04"
+        },
+        {
+          "coder": "B",
+          "start": 75,
+          "end": 89,
+          "topics": [
+            "service"
+          ],
+          "clauseRange": [
+            4,
+            4
+          ],
+          "id": "D25-B-05"
+        }
+      ]
+    }
+  ]
+}
